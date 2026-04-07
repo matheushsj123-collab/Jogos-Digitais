@@ -73,5 +73,6 @@ shape = SubResource("RectangleShape2D_4flbx")
 position = Vector2(12, 12)
 sprite_frames = SubResource("SpriteFrames_sweqy")
 animation = &"andar"
-autoplay = "idle"
-frame_progress = 0.16565485
+autoplay = "andar"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1553467151]
