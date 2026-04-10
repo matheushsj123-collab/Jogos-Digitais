@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dsh1yoyvk7qyq" path="res://Imagns/Basic Platformer Jogos DIgitais/Basic Platformer Asset Pack/Player Sprites/sPlayer_Idle.png" id="2_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
-size = Vector2(24.25, 27)
+size = Vector2(16, 20)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
 atlas = ExtResource("2_i3pqv")
@@ -66,7 +66,7 @@ animations = [{
 script = ExtResource("1_4flbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1612781674]
-position = Vector2(13, 14.5)
+position = Vector2(12, 12)
 shape = SubResource("RectangleShape2D_4flbx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1300229131]

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://qxj2f4xds5ta"]
+
+[node name="Level1" type="Node2D" unique_id=1742237945]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=821501078]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=721632276]
+motion_scale = Vector2(0, 0)

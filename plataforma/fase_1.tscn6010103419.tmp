@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bfxdonbimc052" path="res://hud.tscn" id="3_urf38"]
 [ext_resource type="PackedScene" uid="uid://tabvvjygqj2p" path="res://coin.tscn" id="4_ny45v"]
 [ext_resource type="PackedScene" uid="uid://bgb11kf1ccyg6" path="res://slime.tscn" id="5_tggv0"]
+[ext_resource type="PackedScene" uid="uid://qxj2f4xds5ta" path="res://level_1.tscn" id="6_eb6rn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fbt8"]
 size = Vector2(1161, 134)
@@ -108,6 +109,9 @@ sources/0 = SubResource("TileSetAtlasSource_urf38")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1479963140]
 position = Vector2(590.5, 571)
 shape = SubResource("RectangleShape2D_8fbt8")
+
+[node name="Level1" parent="StaticBody2D" unique_id=1742237945 instance=ExtResource("6_eb6rn")]
+position = Vector2(1275, 198)
 
 [node name="Player" parent="." unique_id=1317937166 instance=ExtResource("1_ru54l")]
 position = Vector2(95, 73)
