@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://qxj2f4xds5ta"]
 
-[node name="Level1" type="Node2D" unique_id=1742237945]
+[ext_resource type="Texture2D" uid="uid://dj845hmyv53q2" path="res://soccer-sociedade-esportiva-palmeiras-logo-wallpaper-preview.jpg" id="1_3hls8"]
+
+[node name="Fundo" type="Node2D" unique_id=1742237945]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=821501078]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=721632276]
 motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1775226987]
+texture = ExtResource("1_3hls8")

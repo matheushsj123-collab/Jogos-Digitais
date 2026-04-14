@@ -48,7 +48,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"andar",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -74,5 +74,6 @@ position = Vector2(12, 12)
 sprite_frames = SubResource("SpriteFrames_sweqy")
 animation = &"andar"
 autoplay = "andar"
+frame_progress = 0.7125591
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1553467151]
