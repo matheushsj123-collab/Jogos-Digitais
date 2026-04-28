@@ -1,5 +1,4 @@
 extends CharacterBody2D
-
 var gravity = 980.0
 
 func _physics_process(delta):
@@ -7,14 +6,13 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 	move_and_slide()
 
-# Esta função cuida do pulo aleatório
+# Função gerada pelo sinal timeout() do Timer! Ela roda a cada 2 segundos.
 func _on_jump_timer_timeout():
 	if is_on_floor():
-		velocity.y = -350.0 
+		velocity.y = -350.0 # Pula para cima
+		# randi_range sorteia um número aleatório. Aqui sorteamos se vai pra esquerda ou direita!
 		velocity.x = randi_range(-1, 1) * 100
-
-# Esta é uma função SEPARADA para o sinal de colisão
-# Certifique-se de que o nome da função no sinal (Node > Signals) seja este:
-func _on_body_entered(body):
+# Função gerada pelo Sinal do Godot
+func _on_hitbox_player_body_entered(body):
 	if body.name == "Player":
-		body.take_damage()
+		body.take_damage() # Aciona aquela função que criamos no script do jogador!

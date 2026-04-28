@@ -43,4 +43,4 @@ func take_damage():
 func die():
 	Global.health = 3
 	Global.coins = 0
-	get_tree().change_scene_to_file("res://GameOver.tscn")
+	get_tree().change_scene_to_file("res://game_over.tscn")

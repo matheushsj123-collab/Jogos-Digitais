@@ -41,6 +41,8 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_da4t2"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5jc4t"]
+
 [node name="slime" type="CharacterBody2D" unique_id=1433987611]
 script = ExtResource("1_5jc4t")
 
@@ -49,10 +51,19 @@ sprite_frames = SubResource("SpriteFrames_5b0gg")
 autoplay = "default"
 frame_progress = 0.2713183
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1944351313]
-position = Vector2(-1, 1)
+[node name="hitbomfisica" type="CollisionShape2D" parent="." unique_id=1944351313]
+position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_da4t2")
 
 [node name="Timer" type="Timer" parent="." unique_id=1512271756]
 wait_time = 2.0
 autostart = true
+
+[node name="HitboxPlayer" type="Area2D" parent="." unique_id=488000726]
+position = Vector2(0, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxPlayer" unique_id=1328858489]
+scale = Vector2(1.2560294, 1.2560294)
+shape = SubResource("RectangleShape2D_5jc4t")
+
+[connection signal="body_entered" from="HitboxPlayer" to="." method="_on_hitbox_player_body_entered"]

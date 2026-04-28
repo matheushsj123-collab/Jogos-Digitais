@@ -14,9 +14,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=177874015]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
+anchor_top = -0.0061728396
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.99382716
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.16862746, 0, 0, 1)
@@ -25,24 +26,20 @@ metadata/_edit_use_anchors_ = true
 [node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=1924652106]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.07986111
-anchor_bottom = 0.03549383
+anchor_left = 0.43836805
+anchor_top = 0.529321
+anchor_right = 0.578125
+anchor_bottom = 0.61882716
+scale = Vector2(0.9534797, 2.2578485)
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="ColorRect/VBoxContainer" unique_id=1278721744]
 layout_mode = 2
 text = "GAME OVER"
 
-[node name="Button" type="Button" parent="." unique_id=1949904997]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.43012154
-anchor_top = 0.47608024
-anchor_right = 0.56987846
-anchor_bottom = 0.52391976
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Button" type="Button" parent="ColorRect/VBoxContainer" unique_id=1949904997]
+layout_mode = 2
 text = "TENTE NOVAMENTE"
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/Button" to="." method="_on_button_pressed"]

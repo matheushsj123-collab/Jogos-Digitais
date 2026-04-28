@@ -32,18 +32,18 @@ text = "MATA BOI"
 
 [node name="Button" type="Button" parent="." unique_id=205808040]
 layout_mode = 0
-offset_left = 89.0
-offset_top = 219.0
-offset_right = 178.0
-offset_bottom = 250.0
+offset_left = 419.0
+offset_top = 271.0
+offset_right = 508.0
+offset_bottom = 302.0
 text = "SAIR"
 
 [node name="Button2" type="Button" parent="." unique_id=742967161]
 layout_mode = 0
-offset_left = 84.0
-offset_top = 142.0
-offset_right = 177.0
-offset_bottom = 173.0
+offset_left = 418.0
+offset_top = 147.0
+offset_right = 511.0
+offset_bottom = 178.0
 text = "JOGAR"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
