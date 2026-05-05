@@ -5,11 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bfxdonbimc052" path="res://hud.tscn" id="3_2am8a"]
 [ext_resource type="PackedScene" uid="uid://tabvvjygqj2p" path="res://coin.tscn" id="4_cjr2x"]
 [ext_resource type="PackedScene" uid="uid://bgb11kf1ccyg6" path="res://slime.tscn" id="5_bsee3"]
-[ext_resource type="Texture2D" uid="uid://cqr2ogqfh4yjp" path="res://transferir.png" id="6_iolds"]
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4823c"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_iolds"]
+[ext_resource type="PackedScene" uid="uid://bt102yb0pbqpq" path="res://portal.tscn" id="6_iolds"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fbt8"]
 size = Vector2(1161, 134)
@@ -173,18 +169,7 @@ texture = ExtResource("2_u0tcw")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_urf38")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iolds"]
-size = Vector2(12, 27)
-
 [node name="level1" type="Node2D" unique_id=1406788787]
-
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=810224516]
-
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1302431373]
-material = SubResource("CanvasItemMaterial_4823c")
-position = Vector2(2793.0002, 494)
-scale = Vector2(1282, 3216)
-texture = SubResource("CanvasTexture_iolds")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2113083836]
 
@@ -227,15 +212,23 @@ position = Vector2(882, 360)
 position = Vector2(889, 187)
 
 [node name="slime" parent="." unique_id=1433987611 instance=ExtResource("5_bsee3")]
-position = Vector2(849, 424)
+position = Vector2(516, 358)
 
-[node name="portal2" type="Area2D" parent="." unique_id=1853020696]
-position = Vector2(1935, 516)
+[node name="slime3" parent="." unique_id=2099879885 instance=ExtResource("5_bsee3")]
+position = Vector2(828, 327)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="portal2" unique_id=1210711039]
-shape = SubResource("RectangleShape2D_iolds")
+[node name="slime2" parent="." unique_id=1305036708 instance=ExtResource("5_bsee3")]
+position = Vector2(1399, 530)
 
-[node name="Sprite2D" type="Sprite2D" parent="portal2/CollisionShape2D" unique_id=1351387896]
-position = Vector2(8.583069e-06, 2.5987625e-05)
-scale = Vector2(0.024253847, 0.04323308)
-texture = ExtResource("6_iolds")
+[node name="slime4" parent="." unique_id=714343560 instance=ExtResource("5_bsee3")]
+position = Vector2(1861, 583)
+
+[node name="slime5" parent="." unique_id=1811061481 instance=ExtResource("5_bsee3")]
+position = Vector2(1819, 486)
+
+[node name="slime6" parent="." unique_id=783988113 instance=ExtResource("5_bsee3")]
+position = Vector2(1399, 417)
+
+[node name="Portal" parent="." unique_id=895120105 instance=ExtResource("6_iolds")]
+position = Vector2(1932, 503)
+next_scene_path = "uid://cuibeye5r5j0g"

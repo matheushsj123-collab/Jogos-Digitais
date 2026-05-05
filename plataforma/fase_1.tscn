@@ -7,14 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://bgb11kf1ccyg6" path="res://slime.tscn" id="5_tggv0"]
 [ext_resource type="PackedScene" uid="uid://bt102yb0pbqpq" path="res://portal.tscn" id="7_hffw0"]
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_eb6rn"]
-particles_animation = true
-particles_anim_h_frames = 1
-particles_anim_v_frames = 1
-particles_anim_loop = false
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_eb6rn"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fbt8"]
 size = Vector2(1161, 134)
 
@@ -177,15 +169,6 @@ sources/0 = SubResource("TileSetAtlasSource_urf38")
 
 [node name="level1" type="Node2D" unique_id=1406788787]
 
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1968140421]
-scroll_offset = Vector2(878, 277)
-
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1456161610]
-material = SubResource("CanvasItemMaterial_eb6rn")
-position = Vector2(2493.5, 449.00006)
-scale = Vector2(697.00006, 2180.0002)
-texture = SubResource("CanvasTexture_eb6rn")
-
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2113083836]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1479963140]
@@ -221,7 +204,16 @@ position = Vector2(1861, 437)
 position = Vector2(1787, 485)
 
 [node name="slime" parent="." unique_id=1433987611 instance=ExtResource("5_tggv0")]
-position = Vector2(849, 424)
+position = Vector2(690, 423)
+
+[node name="slime4" parent="." unique_id=1073943399 instance=ExtResource("5_tggv0")]
+position = Vector2(1705, 389)
+
+[node name="slime2" parent="." unique_id=1934057907 instance=ExtResource("5_tggv0")]
+position = Vector2(1110, 423)
+
+[node name="slime3" parent="." unique_id=1345967408 instance=ExtResource("5_tggv0")]
+position = Vector2(1531, 422)
 
 [node name="Portal2" parent="." unique_id=895120105 instance=ExtResource("7_hffw0")]
 position = Vector2(1916, 474)

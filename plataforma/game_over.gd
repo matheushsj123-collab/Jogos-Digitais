@@ -3,8 +3,4 @@ extends Control
 # Função ativada quando o jogador clica no botão com o mouse ou teclado
 func _on_restart_button_pressed():
 	# Volta o jogador para o Level 1
-	get_tree().change_scene_to_file("res://level_1.tscn")
-
-
-func _on_button_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://fase_1.tscn")
