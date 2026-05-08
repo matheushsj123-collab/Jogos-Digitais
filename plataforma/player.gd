@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 300.0 # Velocidade de movimento lateral
-const JUMP_FORCE = -400.0 # Força do pulo (Lembre-se: Negativo vai para CIMA)
+const SPEED = 200.0 # Velocidade de movimento lateral
+const JUMP_FORCE = -300.0 # Força do pulo (Lembre-se: Negativo vai para CIMA)
 var gravity = 980.0 # Força da gravidade (Positivo puxa para BAIXO)
 
 # Pega a referência da nossa animação para podermos controlá-la

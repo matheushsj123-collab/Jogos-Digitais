@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://tabvvjygqj2p" path="res://coin.tscn" id="4_cjr2x"]
 [ext_resource type="PackedScene" uid="uid://bgb11kf1ccyg6" path="res://slime.tscn" id="5_bsee3"]
 [ext_resource type="PackedScene" uid="uid://bt102yb0pbqpq" path="res://portal.tscn" id="6_iolds"]
+[ext_resource type="PackedScene" uid="uid://d2j3h5otf3lch" path="res://morte.tscn" id="7_u0tcw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fbt8"]
 size = Vector2(1161, 134)
@@ -232,3 +233,6 @@ position = Vector2(1399, 417)
 [node name="Portal" parent="." unique_id=895120105 instance=ExtResource("6_iolds")]
 position = Vector2(1932, 503)
 next_scene_path = "uid://cuibeye5r5j0g"
+
+[node name="Area2D" parent="." unique_id=1681340538 instance=ExtResource("7_u0tcw")]
+position = Vector2(165, 1078)

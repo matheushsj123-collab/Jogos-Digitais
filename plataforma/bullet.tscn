@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://33id67qgy07n"]
+
+[ext_resource type="Script" uid="uid://bcxhov460rwmh" path="res://bullet.gd" id="1_t4vbm"]
+[ext_resource type="Texture2D" uid="uid://c0a7vthh8i0mx" path="res://Captura_de_tela_2026-05-08_111514-removebg-preview.png" id="1_v8qja"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8qja"]
+size = Vector2(6, 6)
+
+[node name="Area2D" type="Area2D" unique_id=28887121]
+script = ExtResource("1_t4vbm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2146813196]
+scale = Vector2(0.020689636, 0.019607862)
+texture = ExtResource("1_v8qja")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=879646013]
+shape = SubResource("RectangleShape2D_v8qja")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

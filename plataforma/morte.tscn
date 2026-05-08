@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d2j3h5otf3lch"]
+
+[ext_resource type="Script" uid="uid://bndspfg7yng7m" path="res://morte.gd" id="1_6or3w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0kp72"]
+size = Vector2(5386, 112)
+
+[node name="Area2D" type="Area2D" unique_id=1681340538]
+script = ExtResource("1_6or3w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1904990985]
+position = Vector2(435, 155)
+shape = SubResource("RectangleShape2D_0kp72")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
