@@ -40,8 +40,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_da4t2"]
+size = Vector2(18, 12)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5jc4t"]
+size = Vector2(15.923195, 11.146236)
 
 [node name="slime" type="CharacterBody2D" unique_id=1433987611]
 script = ExtResource("1_5jc4t")
@@ -63,6 +65,7 @@ autostart = true
 position = Vector2(0, 3)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxPlayer" unique_id=1328858489]
+position = Vector2(0, 2.3841858e-07)
 scale = Vector2(1.2560294, 1.2560294)
 shape = SubResource("RectangleShape2D_5jc4t")
 

@@ -213,22 +213,22 @@ position = Vector2(882, 360)
 position = Vector2(889, 187)
 
 [node name="slime" parent="." unique_id=1433987611 instance=ExtResource("5_bsee3")]
-position = Vector2(516, 358)
+position = Vector2(515, 360)
 
 [node name="slime3" parent="." unique_id=2099879885 instance=ExtResource("5_bsee3")]
-position = Vector2(828, 327)
+position = Vector2(827, 329)
 
 [node name="slime2" parent="." unique_id=1305036708 instance=ExtResource("5_bsee3")]
-position = Vector2(1399, 530)
+position = Vector2(1403, 551)
 
 [node name="slime4" parent="." unique_id=714343560 instance=ExtResource("5_bsee3")]
-position = Vector2(1861, 583)
+position = Vector2(1872, 584)
 
 [node name="slime5" parent="." unique_id=1811061481 instance=ExtResource("5_bsee3")]
-position = Vector2(1819, 486)
+position = Vector2(1817, 488)
 
 [node name="slime6" parent="." unique_id=783988113 instance=ExtResource("5_bsee3")]
-position = Vector2(1399, 417)
+position = Vector2(1391, 424)
 
 [node name="Portal" parent="." unique_id=895120105 instance=ExtResource("6_iolds")]
 position = Vector2(1932, 503)

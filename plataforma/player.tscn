@@ -72,9 +72,8 @@ shape = SubResource("RectangleShape2D_4flbx")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1300229131]
 position = Vector2(12, 12)
 sprite_frames = SubResource("SpriteFrames_sweqy")
-animation = &"andar"
+animation = &"idle"
 autoplay = "andar"
-frame_progress = 0.7125591
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1553467151]
 zoom = Vector2(3, 3)

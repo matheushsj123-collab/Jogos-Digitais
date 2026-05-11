@@ -209,13 +209,13 @@ position = Vector2(1787, 485)
 position = Vector2(690, 423)
 
 [node name="slime4" parent="." unique_id=1073943399 instance=ExtResource("5_tggv0")]
-position = Vector2(1705, 389)
+position = Vector2(1703, 394)
 
 [node name="slime2" parent="." unique_id=1934057907 instance=ExtResource("5_tggv0")]
-position = Vector2(1110, 423)
+position = Vector2(1105, 424)
 
 [node name="slime3" parent="." unique_id=1345967408 instance=ExtResource("5_tggv0")]
-position = Vector2(1531, 422)
+position = Vector2(1521, 425)
 
 [node name="Portal2" parent="." unique_id=895120105 instance=ExtResource("7_hffw0")]
 position = Vector2(1916, 474)

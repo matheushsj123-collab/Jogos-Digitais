@@ -23,7 +23,7 @@ func _physics_process(delta):
 	
 	if direction: # Se o jogador estiver apertando algum botão de andar...
 		velocity.x = direction * SPEED # Aplica a velocidade
-		anim.play("run") # Toca a animação "run"
+		anim.play("andar") # Toca a animação "run"
 		anim.flip_h = (direction < 0) # Vira a imagem para a esquerda se direction for negativo
 	else: # Se soltou os botões...
 		velocity.x = move_toward(velocity.x, 0, SPEED) # Freia o personagem

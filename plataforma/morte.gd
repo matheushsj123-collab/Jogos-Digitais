@@ -7,5 +7,5 @@ func _on_body_entered(body):
 
 func morrer():
 	print("O jogador caiu no void!")
-	# Reinicia a cena atual
+	Global.health = 3 # Adicione isso para a vida voltar ao normal!
 	get_tree().reload_current_scene()

@@ -220,31 +220,31 @@ position = Vector2(2011.0001, 59.00003)
 rotation = 0.23601818
 
 [node name="slime" parent="." unique_id=1433987611 instance=ExtResource("5_mirrl")]
-position = Vector2(642, 372)
+position = Vector2(641, 378)
 
 [node name="slime2" parent="." unique_id=900913090 instance=ExtResource("5_mirrl")]
-position = Vector2(719, 227)
+position = Vector2(718, 232)
 
 [node name="slime5" parent="." unique_id=929907487 instance=ExtResource("5_mirrl")]
-position = Vector2(972, 84)
+position = Vector2(969, 88)
 
 [node name="slime6" parent="." unique_id=1208407742 instance=ExtResource("5_mirrl")]
-position = Vector2(1932.0001, 325)
+position = Vector2(1926.0001, 329.00003)
 rotation = 0.007972876
 
 [node name="slime7" parent="." unique_id=1043287541 instance=ExtResource("5_mirrl")]
-position = Vector2(1855.0001, 164.00003)
+position = Vector2(1855, 169)
 rotation = 0.007972876
 
 [node name="slime8" parent="." unique_id=1072693432 instance=ExtResource("5_mirrl")]
-position = Vector2(1954, 109)
+position = Vector2(1939.0001, 120)
 rotation = 0.007972876
 
 [node name="slime3" parent="." unique_id=122926706 instance=ExtResource("5_mirrl")]
-position = Vector2(1421, 19)
+position = Vector2(1420, 24)
 
 [node name="slime4" parent="." unique_id=1732007342 instance=ExtResource("5_mirrl")]
 position = Vector2(1616, 100)
 
 [node name="Area2D" parent="." unique_id=1681340538 instance=ExtResource("6_7gpko")]
-position = Vector2(281, 1295)
+position = Vector2(297, 1080)
