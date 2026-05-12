@@ -1,11 +1,6 @@
 extends Area2D
 
 func _on_body_entered(body):
-	# Verifica se quem caiu na área é o jogador
-	if body.name == "Player": 
-		morrer()
-
-func morrer():
-	print("O jogador caiu no void!")
-	Global.health = 3 # Adicione isso para a vida voltar ao normal!
-	get_tree().reload_current_scene()
+	# Verifica se quem entrou na área tem a função "die" (que é o seu Player)
+	if body.has_method("die"): 
+		body.die()

@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://bdrsw5qgmyq5a"]
 
+[ext_resource type="Texture2D" uid="uid://201ga1a55kjr" path="res://fundo.jpg" id="1_2am8a"]
 [ext_resource type="PackedScene" uid="uid://bqclb2k1o21d2" path="res://player.tscn" id="1_iolds"]
 [ext_resource type="Texture2D" uid="uid://dvbwprmsea0kj" path="res://Imagns/Basic Platformer Jogos DIgitais/Basic Platformer Asset Pack/sTileset.png" id="2_u0tcw"]
 [ext_resource type="PackedScene" uid="uid://bfxdonbimc052" path="res://hud.tscn" id="3_2am8a"]
@@ -172,6 +173,11 @@ sources/0 = SubResource("TileSetAtlasSource_urf38")
 
 [node name="level1" type="Node2D" unique_id=1406788787]
 
+[node name="Fundo" type="Sprite2D" parent="." unique_id=2011007153]
+position = Vector2(585, 414.50006)
+scale = Vector2(14.901408, 4.389672)
+texture = ExtResource("1_2am8a")
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2113083836]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1479963140]
@@ -235,4 +241,4 @@ position = Vector2(1932, 503)
 next_scene_path = "uid://cuibeye5r5j0g"
 
 [node name="Area2D" parent="." unique_id=1681340538 instance=ExtResource("7_u0tcw")]
-position = Vector2(165, 1078)
+position = Vector2(141, 798)

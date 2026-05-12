@@ -4,6 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://bsudjkhst4iiy" path="res://Captura_de_tela_2026-05-08_102215-removebg-preview.png" id="2_6ncsi"]
 [ext_resource type="PackedScene" uid="uid://33id67qgy07n" path="res://bullet.tscn" id="2_mljjs"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ncsi"]
+size = Vector2(20, 24)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_4jhvt"]
 animations = [{
 "frames": [{
@@ -16,11 +19,15 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yigd2"]
-size = Vector2(535.0001, 614.9999)
+size = Vector2(535.0001, 523.28937)
 
 [node name="planta" type="CharacterBody2D" unique_id=513300455]
 script = ExtResource("1_jgas5")
 bullet_scene = ExtResource("2_mljjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=253326224]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_6ncsi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1075569614]
 position = Vector2(-3.5762787e-07, 1)
@@ -34,12 +41,12 @@ position = Vector2(0, -1.1920929e-07)
 scale = Vector2(0.037383173, 0.046341464)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1754348723]
-position = Vector2(0, -21.578949)
+position = Vector2(1.5258789e-05, 24.276306)
 scale = Vector2(1, 1.0000001)
 shape = SubResource("RectangleShape2D_yigd2")
 
 [node name="Timer" type="Timer" parent="Area2D/CollisionShape2D" unique_id=1579639712]
-wait_time = 3.0
+wait_time = 8.0
 autostart = true
 
 [node name="RayCast2D" type="RayCast2D" parent="Area2D/CollisionShape2D" unique_id=251212521]
