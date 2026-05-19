@@ -173,7 +173,7 @@ sources/0 = SubResource("TileSetAtlasSource_urf38")
 [node name="level1" type="Node2D" unique_id=1406788787]
 
 [node name="Fundo" type="Sprite2D" parent="." unique_id=388990760]
-position = Vector2(1346.0001, 411.99976)
+position = Vector2(1376, 452.99997)
 scale = Vector2(26.450706, 8.974178)
 texture = ExtResource("1_ge8mc")
 
@@ -184,7 +184,7 @@ position = Vector2(590.5, 571)
 shape = SubResource("RectangleShape2D_8fbt8")
 
 [node name="Player" parent="." unique_id=1317937166 instance=ExtResource("1_ru54l")]
-position = Vector2(95, 73)
+position = Vector2(153, 297)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=284216605]
 position = Vector2(11, 95)
